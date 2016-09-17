@@ -1,0 +1,26 @@
+uuid: e663fe8f-53fc-4789-8664-ae803b60532c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.music_band.body
+    - node.type.music_band
+  module:
+    - text
+    - user
+id: node.music_band.teaser
+targetEntityType: node
+bundle: music_band
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

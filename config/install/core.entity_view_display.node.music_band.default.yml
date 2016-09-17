@@ -1,0 +1,32 @@
+uuid: 7f5a8234-5b5f-43f9-922f-f07bf3295905
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.music_band.body
+    - field.field.node.music_band.field_albums
+    - node.type.music_band
+  module:
+    - text
+    - user
+id: node.music_band.default
+targetEntityType: node
+bundle: music_band
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_albums:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

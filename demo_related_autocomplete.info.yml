@@ -1,0 +1,9 @@
+name: Demo Views Related Content with Automplete Filter
+type: module
+description: Demo Views Related Content with Automplete Filter
+core: 8.x
+package: keopx
+dependencies:
+  - views_autocomplete_filters
+tags:
+  - views

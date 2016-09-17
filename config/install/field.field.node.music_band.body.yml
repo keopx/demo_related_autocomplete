@@ -1,0 +1,22 @@
+uuid: d4b60bf1-fc55-49a9-bfb3-9249bec91ccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.music_band
+  module:
+    - text
+id: node.music_band.body
+field_name: body
+entity_type: node
+bundle: music_band
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

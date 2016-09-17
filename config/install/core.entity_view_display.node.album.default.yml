@@ -1,0 +1,24 @@
+uuid: bed23d75-0538-4611-bfad-adf189ec40e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.album.body
+    - node.type.album
+  module:
+    - text
+    - user
+id: node.album.default
+targetEntityType: node
+bundle: album
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

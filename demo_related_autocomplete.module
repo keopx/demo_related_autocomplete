@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains demo_related_autocomplete.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function demo_related_autocomplete_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the demo_related_autocomplete module.
+    case 'help.page.demo_related_autocomplete':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Demo Views Related Content with Automplete Filter') . '</p>';
+      return $output;
+
+    default:
+  }
+}
